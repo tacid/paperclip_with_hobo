@@ -1,5 +1,4 @@
 <def tag="input" for="Paperclip::Attachment">
-    <view /><br/>
     <%= @name = this.name
     @model = this.instance.class.name.downcase
     @old_description = eval("this.instance.#{@name}_description.to_s")
