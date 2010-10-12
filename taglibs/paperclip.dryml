@@ -3,6 +3,4 @@
     @model = this.instance.class.name.downcase
     @old_description = eval("this.instance.#{@name}_description.to_s")
     file_field_tag param_name_for_this, attributes %>
-    <ht key="#{@model.tableize}.attachments.description">Description</ht>:
-    <%= "<input style='width:40%' class='#{@name}-description-tag #{@model}-#{@name}-description' id='#{@model}_#{@name}_description' name='#{@model}[#{@name}_description]' type='text' value='#{@old_description}' />" %>
 </def>
